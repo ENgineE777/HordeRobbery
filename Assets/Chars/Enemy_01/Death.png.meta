@@ -1,0 +1,45 @@
+﻿{
+
+	"textureFilter" : 1,
+	"texturMode" : 0,
+	"spriteSheet" :
+	{
+		"sizeX" : 154.000000,
+		"sizeY" : 100.000000,
+		"count" : 1,
+		"Sheet" : [
+			{
+				"name" : "Slice0",
+				"isNineSliced" : false,
+				"pos" :
+				{
+					"x" : 34.000000,
+					"y" : 3.000000
+				},
+				"size" :
+				{
+					"x" : 93.000000,
+					"y" : 95.000000
+				},
+				"upLeftOffset" :
+				{
+					"x" : 10.000000,
+					"y" : 10.000000
+				},
+				"downRightOffset" :
+				{
+					"x" : 10.000000,
+					"y" : 10.000000
+				},
+				"offset" :
+				{
+					"x" : 0.500000,
+					"y" : 0.500000
+				}
+			}
+		],
+		"anim_count" : 0,
+		"Animations" : [
+		]
+	}
+}

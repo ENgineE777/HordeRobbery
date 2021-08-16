@@ -1,0 +1,138 @@
+﻿{
+
+	"camPos" :
+	{
+		"x" : -19.999998,
+		"y" : 3.333333
+	},
+	"camZoom" : 0.900000,
+	"def_node" : 0,
+	"Count" : 4,
+	"Node" : [
+		{
+			"type" : 0,
+			"looped" : true,
+			"reverse" : false,
+			"pos" :
+			{
+				"x" : -280.674591,
+				"y" : 34.007935
+			},
+			"name" : "Node",
+			"object_uid" : 0,
+			"def_link" : -1,
+			"texture" :
+			{
+				"Path" : "Assets/Chars/Hero/Idle.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"Count" : 2,
+			"Link" : [
+				{
+					"index" : 1,
+					"name" : "Walk"
+				},
+				{
+					"index" : 3,
+					"name" : "Kick"
+				}
+			],
+			"CountEvent" : 0,
+			"Event" : [
+			]
+		},
+		{
+			"type" : 0,
+			"looped" : true,
+			"reverse" : false,
+			"pos" :
+			{
+				"x" : 28.515900,
+				"y" : 182.230194
+			},
+			"name" : "Walk",
+			"object_uid" : 0,
+			"def_link" : -1,
+			"texture" :
+			{
+				"Path" : "Assets/Chars/Hero/Walk.png",
+				"sliceIndex" : -1,
+				"animIndex" : 0
+			},
+			"Count" : 2,
+			"Link" : [
+				{
+					"index" : 3,
+					"name" : "Kick"
+				},
+				{
+					"index" : 0,
+					"name" : "Idle"
+				}
+			],
+			"CountEvent" : 0,
+			"Event" : [
+			]
+		},
+		{
+			"type" : 0,
+			"looped" : true,
+			"reverse" : false,
+			"pos" :
+			{
+				"x" : -60.555576,
+				"y" : -212.777786
+			},
+			"name" : "Death",
+			"object_uid" : 0,
+			"def_link" : -1,
+			"texture" :
+			{
+				"Path" : "Assets/Chars/Hero/Death.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"Count" : 0,
+			"Link" : [
+			],
+			"CountEvent" : 0,
+			"Event" : [
+			]
+		},
+		{
+			"type" : 0,
+			"looped" : false,
+			"reverse" : false,
+			"pos" :
+			{
+				"x" : 175.000046,
+				"y" : -56.111095
+			},
+			"name" : "Kick",
+			"object_uid" : 0,
+			"def_link" : 0,
+			"texture" :
+			{
+				"Path" : "Assets/Chars/Hero/Kick.png",
+				"sliceIndex" : -1,
+				"animIndex" : 0
+			},
+			"Count" : 1,
+			"Link" : [
+				{
+					"index" : 0,
+					"name" : ""
+				}
+			],
+			"CountEvent" : 1,
+			"Event" : [
+				{
+					"frameNumber" : 2,
+					"name" : "Kick",
+					"param" : "2"
+				}
+			]
+		}
+	]
+}

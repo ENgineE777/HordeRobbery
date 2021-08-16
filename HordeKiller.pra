@@ -1,0 +1,42 @@
+﻿{
+
+	"export_dir" : "F:/Work/Demo",
+	"iconPath" : "Horde.png",
+	"iconSmallPath" : "Horde.png",
+	"projectName" : "Horde Killer",
+	"start_scene" : 0,
+	"scenes_count" : 1,
+	"alignRect" :
+	{
+		"x" : 64.000000,
+		"y" : 64.000000
+	},
+	"useAlignRect" : true,
+	"pixelsPerUnit" : 50.000000,
+	"pixelsHeight" : 1080.000000,
+	"scenes" : [
+		{
+			"path" : "Assets/Scenes/Map_01.sca",
+			"selected_entity" : 801492,
+			"camera2DMode" : true,
+			"camera3DAngles" :
+			{
+				"x" : 2.040001,
+				"y" : 0.040000
+			},
+			"camera3DPos" :
+			{
+				"x" : -1.703220,
+				"y" : 26.191578,
+				"z" : -30.694225
+			},
+			"camera2DPos" :
+			{
+				"x" : 1254.978760,
+				"y" : 571.595276
+			},
+			"camera2DZoom" : 0.820000
+		}
+	],
+	"selected_scene" : "Assets/Scenes/Map_01.sca"
+}
