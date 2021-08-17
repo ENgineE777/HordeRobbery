@@ -329,7 +329,7 @@ namespace Oak
 			orc.transform.position = ChoosePatrolTraget();
 			desc.pos = orc.transform.position * Sprite::pixelsPerUnitInvert;
 
-			orc.controller = root.GetPhysScene()->CreateController(desc, 4);
+			orc.controller = GetRoot()->GetPhysScene()->CreateController(desc, 4);
 			orc.controller->RestrictZAxis();
 
 			orc.bodyData.controller = orc.controller;

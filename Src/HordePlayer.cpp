@@ -125,7 +125,7 @@ namespace Oak
 		desc.upVector.Set(0.0f, 0.0f, 1.0f);
 		desc.pos = transform.global.Pos() * Sprite::pixelsPerUnitInvert;
 
-		controller = root.GetPhysScene()->CreateController(desc, 2);
+		controller = GetRoot()->GetPhysScene()->CreateController(desc, 2);
 		controller->RestrictZAxis();
 
 		bodyData.object = this;
@@ -140,18 +140,18 @@ namespace Oak
 
 		anim.SetOnFrameChangeCallback(fireEvents);
 
-		heroCURSOR_X = root.controls.GetAlias("Hero.CURSOR_X");
-		heroCURSOR_Y = root.controls.GetAlias("Hero.CURSOR_Y");
+		heroCURSOR_X = GetRoot()->GetControls()->GetAlias("Hero.CURSOR_X");
+		heroCURSOR_Y = GetRoot()->GetControls()->GetAlias("Hero.CURSOR_Y");
 
-		heroMoveHorz = root.controls.GetAlias("Hero.MOVE_HORZ");
-		heroMoveVert = root.controls.GetAlias("Hero.MOVE_VERT");
+		heroMoveHorz = GetRoot()->GetControls()->GetAlias("Hero.MOVE_HORZ");
+		heroMoveVert = GetRoot()->GetControls()->GetAlias("Hero.MOVE_VERT");
 
-		heroFire = root.controls.GetAlias("Hero.Fire");
+		heroFire = GetRoot()->GetControls()->GetAlias("Hero.Fire");
 
-		heroPrevItem = root.controls.GetAlias("Hero.PrevItem");
-		heroNextItem = root.controls.GetAlias("Hero.NextItem");
+		heroPrevItem = GetRoot()->GetControls()->GetAlias("Hero.PrevItem");
+		heroNextItem = GetRoot()->GetControls()->GetAlias("Hero.NextItem");
 
-		heroUseItem = root.controls.GetAlias("Hero.UseItem");
+		heroUseItem = GetRoot()->GetControls()->GetAlias("Hero.UseItem");
 	}
 
 	void HordePlayer::OnFrameChangeCallback(int frame, eastl::string& name, eastl::string& param)
@@ -216,29 +216,29 @@ namespace Oak
 
 	void HordePlayer::ControlPlayer(float dt)
 	{
-		float msX = root.controls.GetAliasValue(heroCURSOR_X, false);
-		float msY = root.controls.GetAliasValue(heroCURSOR_Y, false);
+		float msX = GetRoot()->GetControls()->GetAliasValue(heroCURSOR_X, false);
+		float msY = GetRoot()->GetControls()->GetAliasValue(heroCURSOR_Y, false);
 
 		if (cursorRef.entity)
 		{
-			float k = Sprite::pixelsHeight / root.render.GetDevice()->GetHeight();
+			float k = Sprite::pixelsHeight / GetRoot()->GetRender()->GetDevice()->GetHeight();
 
 			auto& trans = cursorRef.entity->GetTransform();
 			trans.position.x = msX * k;
 			trans.position.y = Sprite::pixelsHeight - msY * k;
 		}
 
-		auto screenPos = root.render.TransformToScreen(Math::Vector3(transform.position.x * Sprite::pixelsPerUnitInvert, transform.position.y * Sprite::pixelsPerUnitInvert, 0.0f), 2);
+		auto screenPos = GetRoot()->GetRender()->TransformToScreen(Math::Vector3(transform.position.x * Sprite::pixelsPerUnitInvert, transform.position.y * Sprite::pixelsPerUnitInvert, 0.0f), 2);
 
 		Math::Vector2 dir((msX - screenPos.x), (msY - screenPos.y));
 		dir.Normalize();
 
 		transform.rotation.z = atan2f(dir.y, dir.x) / Math::Radian;
 
-		moveDir.x = root.controls.GetAliasValue(heroMoveHorz, false);
-		moveDir.y = root.controls.GetAliasValue(heroMoveVert, false);
+		moveDir.x = GetRoot()->GetControls()->GetAliasValue(heroMoveHorz, false);
+		moveDir.y = GetRoot()->GetControls()->GetAliasValue(heroMoveVert, false);
 
-		if (root.controls.GetAliasState(heroPrevItem))
+		if (GetRoot()->GetControls()->GetAliasState(heroPrevItem))
 		{
 			curItem--;
 
@@ -248,14 +248,14 @@ namespace Oak
 			}
 		}
 
-		if (root.controls.GetAliasState(heroNextItem))
+		if (GetRoot()->GetControls()->GetAliasState(heroNextItem))
 		{
 			curItem = (curItem + 1) % items.size();
 		}
 
 		UpdateIconItem();
 
-		if (root.controls.GetAliasState(heroUseItem, AliasAction::Pressed))
+		if (GetRoot()->GetControls()->GetAliasState(heroUseItem, AliasAction::Pressed))
 		{
 			if (items[curItem].amount > 0)
 			{
@@ -290,7 +290,7 @@ namespace Oak
 			useIconRef.entity->GetTransform().scale.y = curTimeToUseItem / timeToUseItem;
 		}
 
-		if (root.controls.GetAliasState(heroFire, AliasAction::JustPressed))
+		if (GetRoot()->GetControls()->GetAliasState(heroFire, AliasAction::JustPressed))
 		{
 			anim.ActivateLink("Kick");
 		}

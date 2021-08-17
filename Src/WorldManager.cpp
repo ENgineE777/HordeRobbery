@@ -371,7 +371,7 @@ namespace Oak
 		{
 			int device_index;
 
-			const char* keyPressed = root.controls.GetActivatedKey(device_index);
+			const char* keyPressed = GetRoot()->GetControls()->GetActivatedKey(device_index);
 
 			switch (state)
 			{
@@ -681,7 +681,7 @@ namespace Oak
 			rcdesc.length = dist * Sprite::pixelsPerUnitInvert;
 			rcdesc.group = 1;
 
-			if (!root.GetPhysScene()->RayCast(rcdesc))
+			if (!GetRoot()->GetPhysScene()->RayCast(rcdesc))
 			{
 				return true;
 			}
