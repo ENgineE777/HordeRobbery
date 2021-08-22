@@ -1448,6 +1448,128 @@
 					]
 				},
 				{
+					"type" : "HordePlayer",
+					"uid" : 390391,
+					"name" : "HordePlayer",
+					"visible" : true,
+					"Transform" :
+					{
+						"position" :
+						{
+							"x" : -1536.000000,
+							"y" : 1728.000000,
+							"z" : 0.000000
+						},
+						"rotation" :
+						{
+							"x" : 0.000000,
+							"y" : 0.000000,
+							"z" : 0.000000
+						},
+						"scale" :
+						{
+							"x" : 1.000000,
+							"y" : 1.000000,
+							"z" : 1.000000
+						},
+						"size" :
+						{
+							"x" : 86.000000,
+							"y" : 86.000000,
+							"z" : 1.000000
+						},
+						"offset" :
+						{
+							"x" : 0.500000,
+							"y" : 0.500000,
+							"z" : 0.000000
+						}
+					},
+					"anim" :
+					{
+						"Path" : "Assets/Chars/Hero/Hero.ang"
+					},
+					"Cursor" :
+					{
+						"uid" : 620884
+					},
+					"Health Bar" :
+					{
+						"uid" : 619997
+					},
+					"Select Icon" :
+					{
+						"uid" : 850938
+					},
+					"Use Icon" :
+					{
+						"uid" : 15479
+					},
+					"Health amount label" :
+					{
+						"uid" : 32220
+					},
+					"Land mine amount label" :
+					{
+						"uid" : 145744
+					},
+					"Decoy amount label" :
+					{
+						"uid" : 621169
+					},
+					"maxHP" : 5,
+					"speed" : 280.000000,
+					"timeToUseItem" : 2.000000,
+					"childs" : [
+						{
+							"type" : "PointLight2D",
+							"uid" : 212433,
+							"name" : "PointLight2D",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 150.000000,
+									"y" : 150.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.500000
+								}
+							},
+							"color" :
+							{
+								"r" : 0.383745,
+								"g" : 0.701563,
+								"b" : 0.814672,
+								"a" : 1.000000
+							}
+						}
+					]
+				},
+				{
 					"type" : "SpriteEntity",
 					"uid" : 832243,
 					"name" : "Treasure",
@@ -1671,7 +1793,377 @@
 							"y" : 0.500000,
 							"z" : 0.500000
 						}
-					}
+					},
+					"childs" : [
+						{
+							"type" : "HordeFlock",
+							"uid" : 637690,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : -576.000000,
+									"y" : 1152.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.500000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 8,
+							"maxHP" : 1,
+							"patrolRadius" : 320.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 815860,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : -1344.000000,
+									"y" : 384.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 3,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 243674,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : -2048.000000,
+									"y" : -640.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 10,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 422262,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : -128.000000,
+									"y" : -384.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 15,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 505181,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : 1536.000000,
+									"y" : -192.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 5,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 442196,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : 2688.000000,
+									"y" : 832.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 3,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 949336,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : 2368.000000,
+									"y" : 1792.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 10,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						},
+						{
+							"type" : "HordeFlock",
+							"uid" : 375540,
+							"name" : "HordeFlock",
+							"visible" : true,
+							"Transform" :
+							{
+								"position" :
+								{
+									"x" : 1152.000000,
+									"y" : -1472.000000,
+									"z" : 0.000000
+								},
+								"rotation" :
+								{
+									"x" : 0.000000,
+									"y" : 0.000000,
+									"z" : 0.000000
+								},
+								"scale" :
+								{
+									"x" : 1.000000,
+									"y" : 1.000000,
+									"z" : 1.000000
+								},
+								"size" :
+								{
+									"x" : 86.000000,
+									"y" : 86.000000,
+									"z" : 1.000000
+								},
+								"offset" :
+								{
+									"x" : 0.500000,
+									"y" : 0.500000,
+									"z" : 0.000000
+								}
+							},
+							"anim" :
+							{
+								"Path" : "Assets/Chars/Enemy_01/Enemy_01.ang"
+							},
+							"orcsCount" : 7,
+							"maxHP" : 1,
+							"patrolRadius" : 300.000000
+						}
+					]
 				},
 				{
 					"type" : "Node2D",
@@ -1974,7 +2466,7 @@
 								"position" :
 								{
 									"x" : -38.050739,
-									"y" : 15.432502,
+									"y" : 15.432501,
 									"z" : 0.000092
 								},
 								"rotation" :
@@ -2519,7 +3011,7 @@
 				},
 				"size" :
 				{
-					"x" : 2248.686035,
+					"x" : 1846.307007,
 					"y" : 1080.000000,
 					"z" : 1.000000
 				},
@@ -3457,7 +3949,7 @@
 				},
 				"size" :
 				{
-					"x" : 2248.686035,
+					"x" : 1846.307007,
 					"y" : 1080.000000,
 					"z" : 1.000000
 				},
@@ -3511,7 +4003,7 @@
 						},
 						"size" :
 						{
-							"x" : 2248.686035,
+							"x" : 1846.307007,
 							"y" : 1080.000000,
 							"z" : 0.000000
 						},
@@ -3684,7 +4176,7 @@
 				},
 				"size" :
 				{
-					"x" : 2248.689453,
+					"x" : 2248.689697,
 					"y" : 1080.000000,
 					"z" : 1.000000
 				},
@@ -3738,7 +4230,7 @@
 						},
 						"size" :
 						{
-							"x" : 2248.689453,
+							"x" : 2248.689697,
 							"y" : 1080.000000,
 							"z" : 0.000000
 						},
@@ -3826,6 +4318,153 @@
 					}
 				}
 			]
+		},
+		{
+			"type" : "WorldManager",
+			"uid" : 14712,
+			"name" : "WorldManager",
+			"visible" : true,
+			"Transform" :
+			{
+				"position" :
+				{
+					"x" : 0.000000,
+					"y" : -15.700768,
+					"z" : 0.000000
+				},
+				"rotation" :
+				{
+					"x" : -0.000000,
+					"y" : 0.000000,
+					"z" : 0.000000
+				},
+				"scale" :
+				{
+					"x" : 1.000000,
+					"y" : 1.000000,
+					"z" : 1.000000
+				},
+				"size" :
+				{
+					"x" : 1.000000,
+					"y" : 1.000000,
+					"z" : 1.000000
+				},
+				"offset" :
+				{
+					"x" : 0.500000,
+					"y" : 0.500000,
+					"z" : 0.500000
+				}
+			},
+			"title screen" :
+			{
+				"uid" : 801492
+			},
+			"help screen" :
+			{
+				"uid" : 425597
+			},
+			"Theme music" :
+			{
+				"uid" : 618589
+			},
+			"level" :
+			{
+				"uid" : 932180
+			},
+			"player" :
+			{
+				"uid" : 390391
+			},
+			"treasure" :
+			{
+				"uid" : 832243
+			},
+			"start" :
+			{
+				"uid" : 734840
+			},
+			"lights renderer" :
+			{
+				"uid" : 687344
+			},
+			"hords root" :
+			{
+				"uid" : 47610
+			},
+			"wasted label" :
+			{
+				"uid" : 243408
+			},
+			"victory label" :
+			{
+				"uid" : 751481
+			},
+			"escape label" :
+			{
+				"uid" : 832381
+			},
+			"escapeArrowTex" :
+			{
+				"Path" : "Assets/UI/EscapeArrow.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"hpAmountForPlayer" : 1,
+			"hpIconPosX" : 72.000000,
+			"landMineTexture" :
+			{
+				"Path" : "Assets/Items/LandMine.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"landMineBoomTex" :
+			{
+				"Path" : "Assets/FX/wave.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"landMineBoomFlareColor" :
+			{
+				"r" : 0.938224,
+				"g" : 0.835242,
+				"b" : 0.217349,
+				"a" : 1.000000
+			},
+			"landMineActivateRadius" : 50.000000,
+			"landMineBoomRadius" : 400.000000,
+			"landMineAmountForPlayer" : 1,
+			"landMineIconPosX" : 192.000000,
+			"decoyTexture" :
+			{
+				"Path" : "Assets/Items/Decoy.png",
+				"sliceIndex" : -1,
+				"animIndex" : -1
+			},
+			"decoyAmountForPlayer" : 1,
+			"decoyFlareColor" :
+			{
+				"r" : 0.918919,
+				"g" : 0.873028,
+				"b" : 0.443494,
+				"a" : 1.000000
+			},
+			"decoyFlareRadius" : 55.000000,
+			"decoyIconPosX" : 309.000000,
+			"orcViewDist" : 500.000000,
+			"orcViewAngle" : 70.000000,
+			"orcSpeedPatrol" : 180.000000,
+			"orcSpeedPursuit" : 350.000000,
+			"orcAgroRadius" : 700.000000,
+			"orcFlareColor" :
+			{
+				"r" : 0.868726,
+				"g" : 0.727291,
+				"b" : 0.321999,
+				"a" : 1.000000
+			},
+			"orcFlareRadius" : 350.000000
 		},
 		{
 			"type" : "MusicPlayer",
