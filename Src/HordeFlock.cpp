@@ -28,6 +28,7 @@ namespace Oak
 	void HordeFlock::Orc::MakeDead(Math::Vector3 dir)
 	{
 		WorldManager::instance->ReleaseLightInstance(lightID);
+		lightID = -1;
 
 		hp = 0;
 
@@ -302,7 +303,7 @@ namespace Oak
 
 			if (orc.lightID == -1)
 			{
-				orc.lightID = WorldManager::instance->AddLightInstance(pos, 5.0f, Color(0.15f, 0.15f, 0.0f));
+				orc.lightID = WorldManager::instance->AddLightInstance(pos, WorldManager::instance->orcFlareRadius, WorldManager::instance->orcFlareColor);
 			}
 		}
 	}

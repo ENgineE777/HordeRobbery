@@ -3,7 +3,7 @@
 	"export_dir" : "F:/Work/Demo",
 	"iconPath" : "Horde.png",
 	"iconSmallPath" : "Horde.png",
-	"projectName" : "Horde Killer",
+	"projectName" : "Horde Robbery",
 	"start_scene" : 0,
 	"scenes_count" : 1,
 	"alignRect" :
@@ -17,7 +17,7 @@
 	"scenes" : [
 		{
 			"path" : "Assets/Scenes/Map_01.sca",
-			"selected_entity" : 801492,
+			"selected_entity" : 637690,
 			"camera2DMode" : true,
 			"camera3DAngles" :
 			{
